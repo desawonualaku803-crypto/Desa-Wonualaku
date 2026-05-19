@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Desa Wonualaku</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --text-light: #666;
+      --border: #e5e5e5;
+      --bg: #ffffff;
+      --bg-light: #fafafa;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 32px 0;
+      margin-bottom: 60px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .tagline {
+      color: var(--text-light);
+      font-size: 14px;
+      margin-top: 4px;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      margin-right: 24px;
+      font-size: 15px;
+    }
+    nav a:hover { color: var(--text); }
+    
+    /* Post List */
+    .post {
+      margin-bottom: 60px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid var(--border);
+    }
+    .post:last-child { border-bottom: none; }
+    .post-date {
+      color: var(--text-light);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .post h2 {
+      font-size: 28px;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .post h2 a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .post h2 a:hover { opacity: 0.7; }
+    .post-excerpt {
+      color: var(--text-light);
+      margin-bottom: 16px;
+    }
+    .read-more {
+      color: var(--text);
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .read-more:hover { opacity: 0.7; }
+    
+    /* Tentang Section */
+    .about {
+      background: var(--bg-light);
+      padding: 60px 0;
+      margin: 80px 0 0;
+      border-top: 1px solid var(--border);
+    }
+    .about h3 {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+    
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: var(--text-light);
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+    }
+    
+    @media (max-width: 600px) {
+      .post h2 { font-size: 24px; }
+      header { margin-bottom: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo">Desa Wonualaku</a>
+      <p class="tagline">Cerita dan kabar dari desa kita</p>
+      <nav>
+        <a href="#">Beranda</a>
+        <a href="#tentang">Tentang Desa</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Post 1 -->
+    <article class="post">
+      <div class="post-date">19 Mei 2026</div>
+      <h2><a href="#">Gotong Royong Bersihkan Sungai Desa</a></h2>
+      <p class="post-excerpt">
+        Minggu kemarin warga Desa Wonualaku kompak turun ke sungai untuk kerja bakti. 
+        Mulai dari bapak-bapak, ibu-ibu, sampai anak muda semua ikut ambil bagian...
+      </p>
+      <a href="#" class="read-more">Baca selengkapnya →</a>
+    </article>
+
+    <!-- Post 2 -->
+    <article class="post">
+      <div class="post-date">12 Mei 2026</div>
+      <h2><a href="#">Panen Raya Jagung Musim Ini Melimpah</a></h2>
+      <p class="post-excerpt">
+        Alhamdulillah hasil panen jagung tahun ini meningkat 30% dari tahun lalu. 
+        Pak Kades menyampaikan apresiasi untuk seluruh petani yang sudah kerja keras...
+      </p>
+      <a href="#" class="read-more">Baca selengkapnya →</a>
+    </article>
+
+    <!-- Post 3 -->
+    <article class="post">
+      <div class="post-date">3 Mei 2026</div>
+      <h2><a href="#">Jadwal Posyandu Bulan Mei 2026</a></h2>
+      <p class="post-excerpt">
+        Untuk ibu-ibu dan balita, jangan lupa jadwal posyandu bulan ini. 
+        Tanggal 25 Mei di Balai Desa mulai jam 08.00. Bawa buku KIA ya...
+      </p>
+      <a href="#" class="read-more">Baca selengkapnya →</a>
+    </article>
+  </main>
+
+  <section class="about" id="tentang">
+    <div class="container">
+      <h3>Tentang Desa Wonualaku</h3>
+      <p>
+        Desa Wonualaku adalah desa yang terletak di [isi kecamatan/kabupaten]. 
+        Desa kami dikenal dengan hasil pertanian, semangat gotong royong, dan alam yang masih asri. 
+        Blog ini dibuat untuk berbagi kabar, kegiatan, dan cerita dari warga untuk warga.
+      </p>
+    </div>
+  </section>
+
+  <footer id="kontak">
+    <div class="container">
+      <p><strong>Kantor Desa Wonualaku</strong></p>
+      <p>Jl. Contoh Alamat No. 123 | Telp: 08xx-xxxx-xxxx</p>
+      <p style="margin-top:16px;">© 2026 Desa Wonualaku</p>
+    </div>
+  </footer>
+</body>
+</html>
